@@ -6,3 +6,4 @@ db.sqlite3
 /static
 .idea
 local_settings.py
+production_settings.py
