@@ -1,0 +1,32 @@
+/* make text glow like pink neon light */
+
+.neon {
+    color: #FB42C9;
+    line-height: 1em;
+    text-shadow: 0em 0em 1em #80085D;
+}
+
+.neon {
+    animation: neon 2s linear infinite;
+    -moz-animation: neon 2s linear infinite;
+    /* Firefox */
+    -webkit-animation: neon 2s linear infinite;
+    /* Safari and Chrome */
+    -o-animation: neon 2s linear infinite;
+    /* Opera */
+}
+
+@keyframes neon {
+    0%,
+    100% {
+    text-shadow: 0em 0em 1em #FF10B9, 0em 0em 2em #FF10B9, 0em 0em 3em #FF10B9,
+    0em 0em 3em #FF10B9, 0em 0em .4em #fab0e6, .1em .1em .02em #B004A2;
+    color: #fff;
+    }
+    50% {
+    text-shadow: 0em 0em .5em #80085D, 0em 0em 1em #80085D, 0em 0em 2.5em #80085D,
+    0em 0em 2.5em #80085D, 0em 0em .2em #80085D, .1em .1em .05em #60015a;
+    color: #FF10B9;
+    }
+}
+

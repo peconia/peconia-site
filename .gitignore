@@ -3,7 +3,7 @@
 __pycache__
 myvenv
 db.sqlite3
-/static
+staticfiles
 .idea
 local_settings.py
 production_settings.py
