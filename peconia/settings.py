@@ -25,7 +25,7 @@ try:
 except ImportError:
     SECRET_KEY = os.environ['SECRET_KEY']
 
-ALLOWED_HOSTS = ['127.0.0.1', '.peconia.eu']
+ALLOWED_HOSTS = ['127.0.0.1', 'peconia.eu']
 
 
 # Application definition
@@ -126,8 +126,6 @@ STATICFILES_DIRS = [
 ]
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
-ALLOWED_HOSTS = ['*']
 
 DEBUG = False
 
